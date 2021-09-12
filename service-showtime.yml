@@ -1,0 +1,21 @@
+server:
+  port: 9010
+
+spring:
+  application:
+    name: "service-showtime"
+  boot:
+    admin:
+      client:
+        url: http://localhost:9011
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
